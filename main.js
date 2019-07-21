@@ -6330,6 +6330,7 @@ var AddPropertyComponent = /** @class */ (function () {
         this.initMap();
     };
     AddPropertyComponent.prototype.initMap = function () {
+        var _this = this;
         var waitAndCheck = function () {
             setTimeout(function () {
                 check();
@@ -6353,13 +6354,13 @@ var AddPropertyComponent = /** @class */ (function () {
                 position: new google.maps.LatLng(38.916224, -77.0462604),
                 map: map
             });
-            this.mapForAddProperty = map;
-            this.markerForAddProperty = marker;
+            _this.mapForAddProperty = map;
+            _this.markerForAddProperty = marker;
             var options = {
                 componentRestrictions: { country: "us" }
             };
             var autocomplete = new google.maps.places.Autocomplete(input, options);
-            (this.searchElementRef.nativeElement, {
+            (_this.searchElementRef.nativeElement, {
                 types: ["address"]
             });
         };
@@ -6884,7 +6885,7 @@ var ChatComponent = /** @class */ (function () {
                 desktopNotification: true,
                 loadOwnContacts: true,
                 locShare: false,
-                googleApiKey: "AIzaSyBjteOzAkENtxouRgv5lIMMhN_0emdjD9I",
+                googleMapScriptLoaded: true,
                 topicBox: true,
                 getTopicDetail: function (topicId) {
                     if (options.topic) {
