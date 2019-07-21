@@ -6884,7 +6884,7 @@ var ChatComponent = /** @class */ (function () {
                 desktopNotification: true,
                 loadOwnContacts: true,
                 locShare: false,
-                googleApiKey: "",
+                googleApiKey: "AIzaSyBjteOzAkENtxouRgv5lIMMhN_0emdjD9I",
                 topicBox: true,
                 getTopicDetail: function (topicId) {
                     if (options.topic) {
