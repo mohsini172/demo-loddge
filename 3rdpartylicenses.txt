@@ -640,6 +640,8 @@ MIT
 
 @angular/material/chips
 
+@angular/material/stepper
+
 ngx-pagination
 MIT
 The MIT License (MIT)
